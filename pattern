@@ -1,4 +1,21 @@
- for (int i = 1; i <= 5; i++) {
+import java.util.*;
+public class meow {
+	public static void main(String[] args) {
+		System.out.println("are u ready to read something which is in my heart say yes or no!");
+		Scanner scan=new Scanner(System.in);
+		String answer=scan.nextLine().trim().toLowerCase();
+		if(answer.equals("yes")) {
+			listen();
+		}
+		else {
+			System.out.println("its ok my bad");
+		}
+		
+	}
+
+	public static void listen() {
+
+        for (int i = 1; i <= 5; i++) {
             // Print the "I" pattern
             for (int j = 1; j <= 5; j++) {
                 if (i == 1 || i == 5 || j == 3) {
@@ -83,3 +100,8 @@
             
             System.out.println();
         }
+		
+	}
+	 
+}
+
